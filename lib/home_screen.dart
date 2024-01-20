@@ -67,6 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.login_outlined),
+              title: const Text("Logout"),
+              onTap: () {
+                // Navigate to settings screen or perform relevant action
+                Navigator.pop(context);
+              },
+            ),
             // Add more list tiles for additional options
           ],
         ),
