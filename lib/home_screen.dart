@@ -55,7 +55,6 @@ class _HomeScreenState extends State<HomeScreen> {
               leading: const Icon(Icons.home),
               title: const Text("Home"),
               onTap: () {
-                // Navigate to home screen or perform relevant action
                 Navigator.pop(context);
               },
             ),
@@ -63,7 +62,6 @@ class _HomeScreenState extends State<HomeScreen> {
               leading: const Icon(Icons.settings),
               title: const Text("Settings"),
               onTap: () {
-                // Navigate to settings screen or perform relevant action
                 Navigator.pop(context);
               },
             ),
@@ -78,6 +76,20 @@ class _HomeScreenState extends State<HomeScreen> {
             // Add more list tiles for additional options
           ],
         ),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Container(
+              width: 200,
+              height: 50,
+              decoration: const BoxDecoration(color: Colors.amber),
+              child: const Center(child: Text("Login")),
+            ),
+          ),
+        ],
       ),
     );
   }
